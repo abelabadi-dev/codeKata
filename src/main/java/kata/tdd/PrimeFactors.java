@@ -9,11 +9,15 @@ public class PrimeFactors {
 		
 		List<Integer> factors = new ArrayList<>();
 		
-		if(i == 1)
-			return factors;
-		
-		factors.add(i);
+		while(i%2 == 0){
+			factors.add(2);
+			i /=2;
+		}
+
+		if(i > 1)
+			factors.add(i);
 		return factors;
+
 	}
 	
 	

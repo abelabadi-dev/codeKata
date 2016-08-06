@@ -23,4 +23,20 @@ public class PrimeFactorsTest {
 	public void of_3_is_3() {
 		assertEquals(PrimeFactors.of(3),new ArrayList<Integer>(Arrays.asList(3)));
 	}
+	
+	@Test
+	public void of_4_is_2_2(){
+		assertEquals(PrimeFactors.of(4),new ArrayList<Integer>(Arrays.asList(2,2)));
+	}
+	@Test
+	public void of_5_is_5() {
+		assertEquals(PrimeFactors.of(5),new ArrayList<Integer>(Arrays.asList(5)));
+	}
+	
+	@Test
+	public void of_6_is_2_3()  {
+		assertEquals(PrimeFactors.of(6),new ArrayList<Integer>(Arrays.asList(2,3)));
+	}
+	
+	
 }
