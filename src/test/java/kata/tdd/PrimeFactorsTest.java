@@ -38,5 +38,18 @@ public class PrimeFactorsTest {
 		assertEquals(PrimeFactors.of(6),new ArrayList<Integer>(Arrays.asList(2,3)));
 	}
 	
+	@Test
+	public void of_8_is_2_4() {
+		assertEquals(PrimeFactors.of(8),new ArrayList<Integer>(Arrays.asList(2,2,2)));
+	}
 	
+	@Test
+	public void of_9_is_3() {
+		assertEquals(PrimeFactors.of(9),new ArrayList<Integer>(Arrays.asList(3,3)));
+	}
+	
+	@Test
+	public void of_100_is_2_2_5_5()  {
+		assertEquals(PrimeFactors.of(100),new ArrayList<Integer>(Arrays.asList(2,2,5,5)));
+	}
 }

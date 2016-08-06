@@ -9,17 +9,14 @@ public class PrimeFactors {
 		
 		List<Integer> factors = new ArrayList<>();
 		
-		while(i%2 == 0){
-			factors.add(2);
-			i /=2;
+		for(int divisor = 2;i >1; divisor++){
+			for(; i%divisor == 0;i /=divisor){
+				factors.add(divisor);
+			}
 		}
 
-		if(i > 1)
-			factors.add(i);
 		return factors;
 
 	}
-	
-	
-	
+
 }
