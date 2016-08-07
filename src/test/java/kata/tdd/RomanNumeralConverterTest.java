@@ -27,4 +27,12 @@ public class RomanNumeralConverterTest {
 	public void convert_6_VI() {
 		assertEquals(RomanNumeralConverter.convert(6),"VI");
 	}
+	@Test
+	public void convert_10_X() {
+		assertEquals(RomanNumeralConverter.convert(10),"X");
+	}
+	@Test
+	public void convert_11_XI() {
+		assertEquals(RomanNumeralConverter.convert(11),"XI");
+	}
 }
