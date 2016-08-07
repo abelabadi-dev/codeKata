@@ -24,16 +24,20 @@ public class RomanNumeralConverter {
 		}
 		while (number >= 5) {
 
-			str = "V";
+			str += "V";
 			number -= 5;
 		}
 		while (number >= 4) {
 
-			str = "IV";
+			str += "IV";
 			number -= 4;
 		}
+		while(number >= 1){
+			str += "I";
+			number -= 1;
+		}
 
-		return str + new String(new char[number]).replace("\0", "I");
+		return str;
 	}
 
 	//
