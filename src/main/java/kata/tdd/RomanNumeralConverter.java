@@ -2,12 +2,9 @@ package kata.tdd;
 
 public class RomanNumeralConverter {
 
-	public static String convert(int i) {
+	public static String convert(int number) {
 		
-		if(i == 2)
-			return "II";
-		
-		return "I";
+		return new String(new char[number]).replace("\0", "I");
 	}
 
 }
