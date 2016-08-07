@@ -35,4 +35,9 @@ public class RomanNumeralConverterTest {
 	public void convert_11_XI() {
 		assertEquals(RomanNumeralConverter.convert(11),"XI");
 	}
+	@Test
+	public void convert_20_XX() {
+		assertEquals(RomanNumeralConverter.convert(20),"XX");
+	}
+	
 }

@@ -6,9 +6,9 @@ public class RomanNumeralConverter {
 
 		String str = "";
 
-		if (number >= 10) {
+		while(number >= 10) {
 
-			str = "X";
+			str += "X";
 			number -= 10;
 		}
 
