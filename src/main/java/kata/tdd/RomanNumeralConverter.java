@@ -10,6 +10,7 @@ public class RomanNumeralConverter {
 	private static Map<Integer,String> lookup; 
 	static{
 		lookup = new TreeMap<>(Collections.reverseOrder());
+		lookup.put(100, "C");
 		lookup.put(50, "L");
 		lookup.put(10, "X");
 		lookup.put(9, "IX");
@@ -26,7 +27,6 @@ public class RomanNumeralConverter {
 		for(Integer key : lookup.keySet()){
 			
 			String value = lookup.get(key);
-			System.out.println("key: "+key+" Value: "+value);
 			while(number >= key) {
 
 				str += value;

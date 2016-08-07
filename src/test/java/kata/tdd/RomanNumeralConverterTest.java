@@ -59,6 +59,9 @@ public class RomanNumeralConverterTest {
 	public void convert_51_LI() {
 		assertEquals(RomanNumeralConverter.convert(51),"LI");
 	}
-	
+	@Test
+	public void convert_100_C() {
+		assertEquals(RomanNumeralConverter.convert(100),"C");
+	}
 	
 }
