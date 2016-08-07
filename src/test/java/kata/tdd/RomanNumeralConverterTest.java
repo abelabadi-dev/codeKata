@@ -20,12 +20,20 @@ public class RomanNumeralConverterTest {
 		assertEquals(RomanNumeralConverter.convert(3),"III");
 	}
 	@Test
+	public void convert_4_IV() {
+		assertEquals(RomanNumeralConverter.convert(4),"IV");
+	}
+	@Test
 	public void convert_5_V() {
 		assertEquals(RomanNumeralConverter.convert(5),"V");
 	}
 	@Test
 	public void convert_6_VI() {
 		assertEquals(RomanNumeralConverter.convert(6),"VI");
+	}
+	@Test
+	public void convert_9_IX() {
+		assertEquals(RomanNumeralConverter.convert(9),"IX");
 	}
 	@Test
 	public void convert_10_X() {
